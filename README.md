@@ -1,16 +1,71 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## ⚛️ **2️⃣ Frontend — `primetrade-frontend/README.md`**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```markdown
+# ⚛️ PrimeTrade Frontend
 
-## React Compiler
+Modern **React + Vite** based frontend for interacting with the PrimeTrade backend APIs.  
+Implements user authentication, protected dashboard, and admin product management.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧩 Tech Stack
+- **React.js (Vite)**
+- **Axios** for API communication
+- **React Router DOM**
+- **SweetAlert2** for alerts
+- **JWT LocalStorage Authentication**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧠 Features
+✅ Register / Login with backend API  
+✅ JWT token storage & role-based access  
+✅ Dashboard with Product List  
+✅ Admin: Add, Edit, Delete Products  
+✅ Modern UI with gradient styling  
+✅ Sweet Alerts & Loaders  
+
+---
+
+## ⚙️ How to Run
+
+1️⃣ Install dependencies:
+2️⃣ Start the server:
+npm run dev
+
+3️⃣ Open in browser:
+http://localhost:5173/
+
+Connect with Backend
+Make sure your backend (Spring Boot) runs on port 8080
+and src/api/axios.js has this line:
+const api = axios.create({
+  baseURL: "http://localhost:8080",
+});
+
+📁 Folder Structure
+primetrade-frontend/
+ ┣ src/
+ ┃ ┣ api/
+ ┃ ┃ ┗ axios.js
+ ┃ ┣ components/
+ ┃ ┃ ┗ Loader.jsx
+ ┃ ┣ pages/
+ ┃ ┃ ┣ Login.jsx
+ ┃ ┃ ┣ Register.jsx
+ ┃ ┃ ┗ Dashboard.jsx
+ ┃ ┣ App.jsx
+ ┃ ┗ main.jsx
+ ┣ package.json
+ ┗ README.md
+
+🧾 Author
+skislam0977@gmail.com
+
+
+
+```bash
+npm install
